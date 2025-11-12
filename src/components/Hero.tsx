@@ -37,7 +37,7 @@ export function Hero() {
               Generate robust web application tests with AI in seconds. ProboLabs.ai captures real customer journeys and turns them into resilient, reusable automation.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="#call-to-action" color="blue">
+              <Button href="#call-to-action" color="slate" className="bg-slate-900 text-white hover:bg-slate-800">
                 Start free trial
               </Button>
               <Button
@@ -69,7 +69,7 @@ export function Hero() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-sm text-slate-500">
+            <p className="mt-4 text-sm font-medium text-slate-800">
               Real capture of ProboLabs.ai Recorder in action
             </p>
           </div>
