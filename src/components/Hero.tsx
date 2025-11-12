@@ -24,7 +24,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-white/80 via-white/40 to-transparent"
         aria-hidden="true"
       />
-      <Container id="hero" className="relative pt-32 pb-16 lg:pt-40">
+      <Container id="hero" className="relative pt-28 pb-16 lg:pt-36">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="text-left">
             <span className="inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-500">
