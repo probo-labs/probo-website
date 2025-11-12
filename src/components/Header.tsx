@@ -85,7 +85,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/80 py-4 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 py-4 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <Container className="flex items-center justify-between gap-x-6">
         <nav className="flex w-full items-center justify-between">
           <div className="flex items-center md:gap-x-12">
