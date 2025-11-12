@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-50">
       <Image
-        className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
+        className="absolute inset-0 h-full w-full object-cover"
         src={heroBackground}
         alt=""
         width={1558}
