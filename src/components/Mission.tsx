@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import missionImage from '@/images/background-features.jpg'
+import missionImage from '@/images/background-collaboration.png'
 
 export function Mission() {
   return (
@@ -9,18 +9,18 @@ export function Mission() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-            Our mission is to democratize web application end-to-end testing at scale.
+            Our mission is to democratize web application automation at scale.
           </h2>
         </div>
         <div className="mt-12 grid items-center gap-12 md:grid-cols-2">
           <div className="space-y-6 text-lg leading-8 text-slate-600">
             <p>
-              At ProboLabs.ai, we empower teams to seamlessly integrate AI into their everyday QA
-              workflows—without abandoning their existing frameworks or methodologies.
+              Whether you are a developer, product owner or QA engineer, you can easily automate your workflows with Probium.
+              Moreoever, different team members can collaborate on the same automation tasks with ease.
+              Start with no code, add code if needed.
             </p>
             <p>
-              Our tools are designed to boost the productivity of all relevant functions by enhancing,
-              not replacing, the technology they already rely on.
+              Probium harnesses the power of AI to create robust and resilient automation as well as perform complex functional checks.
             </p>
           </div>
           <div className="relative">
@@ -33,9 +33,6 @@ export function Mission() {
             />
           </div>
         </div>
-        <p className="mt-16 text-center text-base italic text-slate-500">
-          “Professionals who embrace AI will replace those who don’t.”
-        </p>
       </Container>
     </section>
   )

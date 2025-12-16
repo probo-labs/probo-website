@@ -1,23 +1,23 @@
-import { Button } from '@/components/Button'
+import { DownloadButton } from '@/components/DownloadButton'
 import { Container } from '@/components/Container'
 
 export function CallToAction() {
   return (
     <section
-      id="call-to-action"
+      id="download"
       className="bg-slate-950 py-32 text-white"
     >
       <Container className="text-center">
         <h2 className="font-display text-4xl font-semibold sm:text-5xl">
-          Ready to see ProboLabs.ai in action?
+          Try Probium Now.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
-          Capture your first journey in minutes. Start free — no setup needed.
+          Capture your first journey in minutes.<br />
+          No coding required.<br />
+          Start free.
         </p>
         <div className="mt-10 flex justify-center">
-          <Button href="mailto:hello@probolabs.ai" color="white" className="text-blue-600">
-            Start free trial
-          </Button>
+          <DownloadButton color="white" className="text-blue-600" />
         </div>
       </Container>
     </section>

@@ -6,31 +6,36 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'What browsers does ProboLabs.ai support?',
+      question: 'What browsers does Probium support?',
       answer:
-        'We replay journeys across Chromium, WebKit, and Firefox today, with Microsoft Edge support coming soon. All run in parallel without extra configuration.',
+        'We replay journeys across Chromium, WebKit, Firefox and Microsoft Edge.',
     },
     {
       question: 'Do we need to write code to maintain tests?',
       answer:
-        'Nope. Our recorder captures the actions you take and the self-healing engine keeps selectors and waits stable. Engineering can still drop down to code when it helps.',
+        'Nope. Our recorder captures the actions you take and the test regeneration engine keeps up with app changes.',
     },
     {
-      question: 'Can we integrate with our CI pipeline?',
+      question: 'What is the difference between Probium and other automation tools?',
       answer:
-        'Yes. ProboLabs.ai plugs into GitHub Actions, CircleCI, GitLab, and custom runners with a lightweight CLI. We also provide a fully managed cloud orchestrator.',
+        'Probium is a browser-based automation tool that allows you to record and replay user journeys. It is different from other automation tools in that it is browser-based and you own generated code.',
+    },
+    {
+      question: 'Can we integrate with our CI/CD pipeline?',
+      answer:
+        'Yes. Probium plugs into GitHub Actions, GitLab and BitBucket Pipelines.',
     },
   ],
   [
     {
       question: 'How secure is our test data?',
       answer:
-        'Secrets stay encrypted at rest and in transit. Enterprise plans add SSO, granular RBAC, and private networking options like VPC peering.',
+        'Secrets (e.g. passwords, OTP keys)are stored locally on your machine and never sent to our servers.',
     },
     {
       question: 'What happens when the UI changes?',
       answer:
-        'The self-healing engine replays journeys using semantic context, accessibility attributes, and visual cues. We flag any changes we cannot resolve so you can triage instantly.',
+        'The regeneration engine replays journeys using semantic context, accessibility attributes, and visual cues. We flag any changes we cannot resolve so you can triage instantly.',
     },
     {
       question: 'Can non-engineers contribute tests?',
@@ -42,17 +47,17 @@ const faqs = [
     {
       question: 'How quickly can we get started?',
       answer:
-        'Teams usually capture their first production journey in under an hour. ProboLabs.ai includes onboarding sessions and best-practice templates with every plan.',
+        'Teams usually capture their first production journey in minutes. We provide documentation and video tutorials to help you get started.',
     },
     {
       question: 'Do you offer on-prem or private cloud?',
       answer:
-        'Enterprise plans support VPC deployments and fully air-gapped runners. Talk to our team to design the right architecture for your security needs.',
+        'Enterprise plans support single-tenantdeployments. Talk to our team to design the right architecture for your security needs.',
     },
     {
       question: 'Where can I talk to a human?',
       answer:
-        'Email hello@probolabs.ai or join a live product tour. Our QA specialists respond within one business day for every plan.',
+        'Email support@probolabs.ai or join our discord channel.',
     },
   ],
 ]
@@ -80,8 +85,15 @@ export function Faqs() {
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-600">
-            If you can’t find the answer you need, reach us at hello@probolabs.ai and we’ll connect you with a QA specialist.
+          <p className="mt-4 text-lg tracking-tight text-slate-600 whitespace-nowrap">
+            If you can’t find the answer you need, reach us at{' '}
+            <a
+              href="mailto:support@probolabs.ai"
+              className="text-blue-600 hover:text-blue-500 underline"
+            >
+              support@probolabs.ai
+            </a>{' '}
+            and we’ll get back to you within one business day.
           </p>
         </div>
         <ul

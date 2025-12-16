@@ -8,17 +8,22 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import clsx from 'clsx'
+import { useState } from 'react'
 
-import { Button } from '@/components/Button'
+import { DownloadButton } from '@/components/DownloadButton'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 const navigation = [
-  { name: 'Hero', href: '#hero' },
+  { name: 'Overview', href: '#hero' },
   { name: 'Features', href: '#features' },
   { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Get Started', href: '#call-to-action' },
+]
+
+const resources = [
+  { name: 'FAQ', href: '#faq' },
+  { name: 'How To', href: '/howto' },
 ]
 
 function MobileNavLink({
@@ -78,12 +83,19 @@ function MobileNavigation() {
             {item.name}
           </MobileNavLink>
         ))}
+        {resources.map((item) => (
+          <MobileNavLink key={item.name} href={item.href}>
+            {item.name}
+          </MobileNavLink>
+        ))}
       </PopoverPanel>
     </Popover>
   )
 }
 
 export function Header() {
+  const [resourcesOpen, setResourcesOpen] = useState(false)
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/80 py-4 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <Container className="flex items-center justify-between gap-x-6">
@@ -92,24 +104,56 @@ export function Header() {
             <Link href="#hero" aria-label="ProboLabs.ai home" className="inline-flex">
               <Logo imageClassName="h-7 w-auto md:h-8" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="hidden md:flex md:items-center md:gap-x-6">
               {navigation.map((item) => (
                 <NavLink key={item.name} href={item.href}>
                   {item.name}
                 </NavLink>
               ))}
+              <div
+                className="relative py-2"
+                onMouseEnter={() => setResourcesOpen(true)}
+                onMouseLeave={() => setResourcesOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="inline-flex items-center rounded-full px-3 py-1 text-sm text-slate-600 transition hover:bg-blue-50 hover:text-blue-600"
+                >
+                  Resources
+                  <span className="ml-1 text-xs">▾</span>
+                </button>
+                <div
+                  className={clsx(
+                    'absolute left-0 top-full z-20 w-40 rounded-2xl bg-white py-2 text-sm shadow-lg ring-1 ring-slate-200 transition',
+                    resourcesOpen
+                      ? 'visible opacity-100'
+                      : 'invisible opacity-0 pointer-events-none',
+                  )}
+                >
+                  <Link
+                    href="#faq"
+                    className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                  >
+                    FAQ
+                  </Link>
+                  <Link
+                    href="/howto"
+                    className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                  >
+                    How To
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button
-              href="#call-to-action"
+            <DownloadButton
               color="white"
-              className="shadow-md shadow-blue-500/20 text-blue-600 hover:text-blue-500"
+              showIcon={false}
+              className="shadow-md shadow-blue-500/20 text-blue-600 hover:text-blue-500 border border-black ring-0"
             >
-              <span>
-                Start free trial <span className="hidden lg:inline">in minutes</span>
-              </span>
-            </Button>
+              Download
+            </DownloadButton>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

@@ -7,36 +7,43 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotRecording from '@/images/screenshots/payroll.png'
-import screenshotCoverage from '@/images/screenshots/expenses.png'
-import screenshotTimeline from '@/images/screenshots/reporting.png'
-import screenshotInsights from '@/images/screenshots/vat-returns.png'
+import screenshotRecording from '@/images/screenshots/interaction-recorder.png'
+import screenshotRegeneration from '@/images/screenshots/interaction-recorder.png'
+import screenshotCodeGeneration from '@/images/screenshots/code-generation.png'
+import screenshotCollaboration from '@/images/screenshots/collaboration.png'
+import screenshotParameters from '@/images/screenshots/parameters.png'
 
 const features = [
   {
-    title: 'Self-healing recorder',
+    title: 'Interaction Recorder',
     description:
-      'Capture a user journey once and ProboLabs.ai hardens selectors, waits, and assertions automatically so your suite stays resilient as the UI evolves.',
+      'Capture a user journey with no code by simply navigating your application or describing your flow in words. Replay immediately to check your flow. Add assertions, intelligent event synchronization and more.',
     image: screenshotRecording,
   },
   {
-    title: 'Cross-browser coverage',
+    title: 'AI-powered Regeneration',
     description:
-      'Run in Chromium, WebKit, and Firefox with a click. Parallel execution and smart retries keep CI signal fast without additional scripting.',
-    image: screenshotCoverage,
+      'Applications keep evolving. Our AI engine makes sure your automation stays resilient to changes.',
+    image: screenshotRegeneration,
   },
   {
-    title: 'Visual timeline',
+    title: 'Code Generation',
     description:
-      'See every click, API call, and assertion mapped across the flow. Debug faster with DOM snapshots, console logs, and network traces in one place.',
-    image: screenshotTimeline,
+      'We believe you should own the automation code. Probium generates Playwright code for you to integrate into your existing CI/CD pipeline.',
+    image: screenshotCodeGeneration,
   },
   {
-    title: 'Actionable insights',
+    title: 'Collaboration and Reuse',
     description:
-      'Surface flaky tests, quality trends, and release readiness for QA, product, and engineering teams—all without leaving your workflow.',
-    image: screenshotInsights,
+      'Seamlessly share automation flows with your team. Jointly author flows and reuse them across projects.',
+    image: screenshotCollaboration,
   },
+  {
+    title: 'Parameterization',
+    description:
+      'Your recorded flow is fully parameterizable. Create parameter sets to generate multiple flavors of the same flow.',
+    image: screenshotParameters,
+  }
 ]
 
 export function PrimaryFeatures() {
@@ -74,10 +81,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to ship resilient tests.
+            Everything you need to automate your workflows.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            From capture to replay to insights, ProboLabs.ai automates the busywork so your team can release with confidence.
+            From capture to replay to CI/CD, Probium eliminates the busywork so you can focus on your core business.
           </p>
         </div>
         <TabGroup

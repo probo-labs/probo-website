@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
+import { DownloadButton } from '@/components/DownloadButton'
 import { Container } from '@/components/Container'
 
 function SwirlyDoodle(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -73,7 +74,7 @@ function Plan({
 }) {
   const variant = buttonVariant ?? (featured ? 'solid' : 'outline')
   const color = buttonColor ?? (featured ? 'white' : 'blue')
-  const label = ctaLabel ?? (featured ? 'Start free trial' : 'Talk to sales')
+  const label = ctaLabel ?? (featured ? undefined : 'Talk to sales')
 
   return (
     <section
@@ -119,15 +120,24 @@ function Plan({
           </li>
         ))}
       </ul>
-      <Button
-        href={href}
-        variant={variant}
-        color={color}
-        className="mt-8"
-        aria-label={`Get started with the ${name} plan for ${price}`}
-      >
-        {label}
-      </Button>
+      {label === 'Talk to sales' || label === 'Schedule a demo' ? (
+        <Button
+          href={href}
+          variant={variant}
+          color={color}
+          className="mt-8"
+          aria-label={`Get started with the ${name} plan for ${price}`}
+        >
+          {label}
+        </Button>
+      ) : (
+        <DownloadButton
+          variant={variant}
+          color={color}
+          className="mt-8"
+          aria-label={`Download for ${name} plan`}
+        />
+      )}
     </section>
   )
 }

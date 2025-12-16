@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
+import { DownloadButton } from '@/components/DownloadButton'
 import { Container } from '@/components/Container'
 import heroBackground from '@/images/background-faqs.jpg'
 
@@ -27,19 +28,17 @@ export function Hero() {
       <Container id="hero" className="relative pt-28 pb-16 lg:pt-36">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="text-left">
-            <span className="inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-500">
-              AI-powered QA automation
+            <span className="inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-lg font-medium text-blue-500">
+              Introducing&nbsp;<strong>Probium</strong>
             </span>
             <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              Record. Replay. Automate.
+              AI Automation that Lives within your Browser
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Generate robust web application tests with AI in seconds. ProboLabs.ai captures real customer journeys and turns them into resilient, reusable automation.
+              Capture real customer journeys intuitively in your browser and turn them into resilient, reusable automation.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="#call-to-action" color="slate" className="bg-slate-900 text-white hover:bg-slate-800">
-                Start free trial
-              </Button>
+              <DownloadButton color="slate" className="bg-slate-900 text-white hover:bg-slate-800" />
               <Button
                 href="https://youtu.be/13WLhM_T0iU"
                 variant="outline"
@@ -49,7 +48,7 @@ export function Hero() {
               </Button>
             </div>
             <p className="mt-12 text-sm font-semibold uppercase tracking-widest text-slate-500">
-              Trusted by QA teams shipping weekly
+              Trusted by Developers, Product Owners and QA teams shipping daily
             </p>
           </div>
           <div className="relative">
@@ -70,7 +69,7 @@ export function Hero() {
               </div>
             </div>
             <p className="mt-4 text-sm font-medium text-slate-800">
-              Real capture of ProboLabs.ai Recorder in action
+              Watch Probium in action
             </p>
           </div>
         </div>

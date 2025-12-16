@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   },
   description:
     'Record once, test everywhere. ProboLabs.ai turns your browser into a self-healing QA assistant.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 const inter = Inter({
