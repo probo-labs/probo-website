@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { DownloadButton } from '@/components/DownloadButton'
 import { Container } from '@/components/Container'
-import heroBackground from '@/images/background-faqs.jpg'
+import heroBackground from '@/images/background-blueish.png'
 
 const HERO_VIDEO_URL =
   'https://www.youtube.com/embed/13WLhM_T0iU?autoplay=1&mute=1&controls=0&loop=1&playlist=13WLhM_T0iU&modestbranding=1&rel=0'

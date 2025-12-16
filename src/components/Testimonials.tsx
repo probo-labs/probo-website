@@ -16,42 +16,21 @@ const avatars = [
 ]
 
 const testimonials = [
-  [
-    {
-      title: '“Regression anxiety is gone.”',
-      body: '“ProboLabs.ai keeps our smoke suite reliable even when the UI shifts. Releases that used to take a day of manual QA now ship before lunch.”',
-      author: 'Priya Shen, Director of QA at Voyage',
-    },
-    {
-      title: '“Shipping together again.”',
-      body: '“ProboLabs.ai gave product, QA, and engineering one shared source of truth. We comment on the same runs and unblock releases in minutes.”',
-      author: 'Julian Fields, VP Engineering at Brightwave',
-    },
-  ],
-  [
-    {
-      title: '“Our tests self-heal faster than we code.”',
-      body: '“When selectors break, ProboLabs.ai fixes them automatically and tells us why. We focus on new coverage instead of triaging flaky runs.”',
-      author: 'Mina Ko, Staff QA Engineer at Northbeam',
-    },
-    {
-      title: '“Confidence across browsers.”',
-      body: '“We record once and replay across Chrome, Safari, and Firefox as part of CI. Customers stopped finding bugs before we do.”',
-      author: 'Chris Leung, Head of Product Quality at Tandem',
-    },
-  ],
-  [
-    {
-      title: '“Stakeholders finally trust automation.”',
-      body: '“Dashboards make it obvious what’s ready for release. Leadership now checks ProboLabs.ai before every launch.”',
-      author: 'Amelia Ramos, QA Lead at Harbor',
-    },
-    {
-      title: '“The team loves recording tests.”',
-      body: '“Designers, PMs, and support can capture flows without code. ProboLabs.ai translates them into reliable automated suites.”',
-      author: 'Marcus Delgado, Engineering Manager at Alloy',
-    },
-  ],
+  {
+    title: '"Automation is now a no-brainer"',
+    body: 'With Probium I can now automate workflows for new features and find bugs faster',
+    author: 'Dima Portenko, Frontend TL at GoSource',
+  },
+  {
+    title: '"Shipping faster than ever."',
+    body: '"Probium allows manual testers to become automation engineers. We can focus on increasing coverage and not on writing and maintaining flaky tests."',
+    author: 'Jonathan Seroussi, VP R&D at Covercy',
+  },
+  {
+    title: '"The team loves recording tests."',
+    body: '"Our backend developers love creating new flows for new features. The generated code is ours and we can seamlesslyintegrate it into our CI/CD pipeline."',
+    author: 'Tommy Ben-Shaul, WAF Group Manager at Checkpoint',
+  },
 ]
 
 function QuoteIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -75,56 +54,49 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            QA leaders trust ProboLabs.ai.
+            Customers love Probium.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-600">
-            From startups to enterprises, teams rely on ProboLabs.ai to keep automation reliable and releases on schedule.
+            From startups to enterprises, teams rely on Probium to keep automation reliable and releases on schedule with high quality.
           </p>
         </div>
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
         >
-          {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
-                {column.map((testimonial, testimonialIndex) => {
-                  const avatar =
-                    avatars[(columnIndex * column.length + testimonialIndex) % avatars.length]
+          {testimonials.map((testimonial, testimonialIndex) => {
+            const avatar = avatars[testimonialIndex % avatars.length]
 
-                  return (
-                    <li key={testimonialIndex}>
-                      <figure className="relative rounded-2xl bg-white p-6 shadow-lg shadow-slate-900/5 ring-1 ring-slate-900/5">
-                        <QuoteIcon className="absolute left-1/2 top-6 h-10 w-16 -translate-x-1/2 -translate-y-3 text-blue-200 opacity-40" />
-                        <blockquote className="relative">
-                          <p className="text-lg leading-7 text-slate-700">
-                            {testimonial.body}
-                          </p>
-                        </blockquote>
-                        <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                          <div>
-                            <div className="font-display text-base text-slate-900">
-                              {testimonial.author}
-                            </div>
-                            <p className="text-sm text-slate-500">{testimonial.title}</p>
-                          </div>
-                          <div className="overflow-hidden rounded-full bg-slate-100">
-                            <Image
-                              className="h-14 w-14 object-cover"
-                              src={avatar}
-                              alt=""
-                              width={56}
-                              height={56}
-                            />
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </li>
-                  )
-                })}
-              </ul>
-            </li>
-          ))}
+            return (
+              <li key={testimonialIndex}>
+                <figure className="relative rounded-2xl bg-white p-6 shadow-lg shadow-slate-900/5 ring-1 ring-slate-900/5">
+                  <QuoteIcon className="absolute left-1/2 top-6 h-10 w-16 -translate-x-1/2 -translate-y-3 text-blue-200 opacity-40" />
+                  <blockquote className="relative">
+                    <p className="text-lg leading-7 text-slate-700">
+                      {testimonial.body}
+                    </p>
+                  </blockquote>
+                  <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                    <div>
+                      <div className="font-display text-base text-slate-900">
+                        {testimonial.author}
+                      </div>
+                      <p className="text-sm text-slate-500">{testimonial.title}</p>
+                    </div>
+                    <div className="overflow-hidden rounded-full bg-slate-100">
+                      <Image
+                        className="h-14 w-14 object-cover"
+                        src={avatar}
+                        alt=""
+                        width={56}
+                        height={56}
+                      />
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            )
+          })}
         </ul>
       </Container>
     </section>

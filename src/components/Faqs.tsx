@@ -30,7 +30,7 @@ const faqs = [
     {
       question: 'How secure is our test data?',
       answer:
-        'Secrets (e.g. passwords, OTP keys)are stored locally on your machine and never sent to our servers.',
+        'Secrets (e.g. passwords, OTP keys) are stored locally on your machine and never sent to our servers. We offer a redaction feature to mask sensitive (PIIA) data in html and screenshots. Our enterprise plans support single-tenant deployments.',
     },
     {
       question: 'What happens when the UI changes?',

@@ -14,7 +14,7 @@ export function CallToAction() {
         <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
           Capture your first journey in minutes.<br />
           No coding required.<br />
-          Start free.
+          Basic plan is free.
         </p>
         <div className="mt-10 flex justify-center">
           <DownloadButton color="white" className="text-blue-600" />
