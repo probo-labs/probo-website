@@ -76,7 +76,7 @@ export function Mission() {
               </h3>
               <p>
                 QA engineers can create comprehensive test suites without writing a single line of code, however, adding custom code to your tests is straightforward. 
-                Leverage Probium's AI-powered assertions for complex validation scenarios. 
+                Leverage Probium&apos;s AI-powered assertions for complex validation scenarios. 
                 Focus on increasing coverage and not on writing and maintaining flaky tests.
                 Stop doing manual testing, let Probium do the heavy lifting.
               </p>
