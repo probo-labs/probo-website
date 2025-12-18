@@ -5,7 +5,6 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Mission } from '@/components/Mission'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         <Mission />
         <PrimaryFeatures />
         <CallToAction />
-        <Testimonials />
         <Faqs />
       </main>
       <Footer />
