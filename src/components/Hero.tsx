@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 import heroBackground from '@/images/background-blueish.png'
 
 const HERO_VIDEO_URL =
-  'https://www.youtube.com/embed/13WLhM_T0iU?autoplay=1&mute=1&controls=0&loop=1&playlist=13WLhM_T0iU&modestbranding=1&rel=0'
+  'https://www.youtube.com/embed/qTVGrhmRow8?autoplay=1&mute=1&controls=0&loop=1&playlist=qTVGrhmRow8&modestbranding=1&rel=0'
 
 export function Hero() {
   return (
@@ -68,9 +68,6 @@ export function Hero() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-sm font-medium text-slate-800">
-              Watch Probium in action
-            </p>
           </div>
         </div>
       </Container>
