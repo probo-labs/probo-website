@@ -18,7 +18,6 @@ import { NavLink } from '@/components/NavLink'
 const navigation = [
   { name: 'Overview', href: '#hero' },
   { name: 'Features', href: '#features' },
-  { name: 'Testimonials', href: '#testimonials' },
 ]
 
 const resources = [
