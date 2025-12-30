@@ -5,10 +5,10 @@ import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 const navigation = [
-  { name: 'Overview', href: '#hero' },
-  { name: 'Features', href: '#features' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'FAQ', href: '#faq' },
+  { name: 'Overview', href: '/#hero' },
+  { name: 'Features', href: '/#features' },
+  { name: 'Testimonials', href: '/#testimonials' },
+  { name: 'FAQ', href: '/#faq' },
 ]
 
 export function Footer() {

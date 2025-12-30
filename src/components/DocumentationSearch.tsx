@@ -63,6 +63,7 @@ export function DocumentationSearch() {
             <Link
               key={index}
               href={result.href}
+              onClick={() => setQuery('')}
               className="block px-4 py-3 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0"
             >
               <div className="font-medium text-blue-600 hover:text-blue-700">

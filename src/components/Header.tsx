@@ -16,13 +16,13 @@ import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 const navigation = [
-  { name: 'Overview', href: '#hero' },
-  { name: 'Features', href: '#features' },
-  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Overview', href: '/#hero' },
+  { name: 'Features', href: '/#features' },
+  { name: 'Testimonials', href: '/#testimonials' },
 ]
 
 const resources = [
-  { name: 'FAQ', href: '#faq' },
+  { name: 'FAQ', href: '/#faq' },
   { name: 'How To', href: '/howto' },
 ]
 

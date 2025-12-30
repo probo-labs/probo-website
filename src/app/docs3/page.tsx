@@ -1,5 +1,4 @@
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { DocumentationSearch } from '@/components/DocumentationSearch'
 import documentation from '@/data/documentation.json'
 
 export default function Docs3IntroPage() {
@@ -11,7 +10,6 @@ export default function Docs3IntroPage() {
 
   return (
     <div className="space-y-6">
-      <DocumentationSearch />
       <MarkdownContent content={introSection.content} />
       {Array.isArray(introSection.subsections) && introSection.subsections.map((subsection) => (
         <div key={subsection.id} id={subsection.id} className="scroll-mt-6">
