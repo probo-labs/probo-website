@@ -3,28 +3,28 @@
     {
       "id": "introduction",
       "title": "Introduction and Overview",
-      "href": "/docs3",
+      "href": "/docs",
       "content": "# Probium Documentation\n\nWelcome to the complete guide for using Probium for automated website testing.\n\n## What is Probium?\n\nProbium is a powerful browser extension designed to simplify and automate website testing. It allows you to record, replay, and manage test scenarios for web applications with ease.\n\nWith Probium, you can capture complex user interactions, validate page content, handle authentication flows including OTP (One-Time Password), and export your tests as executable TypeScript code for CI/CD integration.\n\n### Key Features\n\n- ✓ Record and replay user interactions with websites\n- ✓ AI-powered scenario fortification for resilient tests\n- ✓ Support for complex authentication flows (Email OTP, TOTP)\n- ✓ Parameter management and test data organization\n- ✓ Team collaboration with project sharing\n- ✓ Export tests as TypeScript code for automated testing\n\n### Getting Started\n\nTo get started with Probium, follow these steps:\n\n1. Install Probium from the Microsoft Store\n2. Sign up or log in to your account\n3. Launch the application and open the side panel\n4. Start recording your first test scenario\n\nUse the navigation menu on the left to explore different sections of the documentation.",
       "subsections": []
     },
     {
       "id": "installation",
       "title": "Installation Guide",
-      "href": "/docs3/installation",
+      "href": "/docs/installation",
       "content": "# Installation Guide\n\nLearn how to download and install Probium on your computer.\n\n## How to Download and Install\n\nProbium is available as a browser application that you can install on your computer.\n\n### Installation Steps\n\n1. Visit the [Microsoft Store page](https://apps.microsoft.com/detail/9phvfgqbndkb?hl=en-US&gl=WF) for Probium\n2. Click the download/install button\n3. Follow the installation wizard\n4. Once installed, launch Probium from your applications\n5. The application will open a browser with the Probium extension installed\n6. Click the Probium icon in the browser toolbar to open the side panel\n\n> **Note:** The Probium browser extension is automatically included with the application. You interact with it through a convenient side panel interface.\n\n### What Happens After Installation\n\nOnce you launch Probium for the first time:\n\n1. A browser window will open with the Probium extension pre-installed\n2. You'll see the Probium icon in your browser toolbar\n3. Click the icon to open the side panel interface\n4. You'll be prompted to sign in or create an account",
       "subsections": []
     },
     {
       "id": "authentication",
       "title": "Authentication and Account Management",
-      "href": "/docs3/authentication",
+      "href": "/docs/authentication",
       "content": "# Authentication and Account Management\n\nLearn how to sign up, log in, and manage your Probium account.\n\n## Signing Up and Logging In\n\nIf you haven't signed in to Probium on your current computer, you'll see a \"Sign up at ProboLabs.ai\" button in the side panel when you open the application.\n\n## Authentication Methods\n\nClick the sign-up button to access the authentication page, where you can choose from the following options:\n\n### OAuth Providers\n\n- Sign in with Google\n- Sign in with GitHub\n- Sign in with LinkedIn\n- Sign in with Microsoft SSO\n\n### Email Authentication\n\n- Sign up using email and password\n\nCreate an account with your email address and a secure password.\n\n## Account Linking\n\nWhen you register with email and password or sign in for the first time using Google, GitHub, or LinkedIn, an account is created and linked to your email address.\n\nYou can subsequently sign in using any authentication method, as long as it uses the same email address associated with your account.\n\n### Example Scenario\n\n**Step 1:** You initially sign up using Google with email address: user@example.com\n\n**Step 2:** An account is created and linked to user@example.com\n\n**Step 3:** Next time, you can sign in using:\n- Google (same account)\n- GitHub (if your GitHub account uses user@example.com)\n- LinkedIn (if your LinkedIn account uses user@example.com)\n- Microsoft SSO (if your Microsoft account uses user@example.com)",
       "subsections": []
     },
     {
       "id": "usage-scenarios",
       "title": "Main Usage Scenarios",
-      "href": "/docs3/usage-scenarios",
+      "href": "/docs/usage-scenarios",
       "content": "# Main Usage Scenarios\n\nLearn the core workflows for working with Probium test scenarios.",
       "subsections": [
         {
@@ -50,7 +50,7 @@
     {
       "id": "step-types",
       "title": "Scenario Step Types",
-      "href": "/docs3/step-types",
+      "href": "/docs/step-types",
       "content": "# Scenario Step Types\n\nUnderstand the different types of steps you can include in your test scenarios.",
       "subsections": [
         {
@@ -112,21 +112,21 @@
     {
       "id": "debugging",
       "title": "Debugging and Step-by-Step Execution",
-      "href": "/docs3/debugging",
+      "href": "/docs/debugging",
       "content": "# Debugging and Step-by-Step Execution\n\nLearn how to debug scenarios using breakpoints and step-by-step execution.\n\n## Step-by-Step Scenario Execution\n\nYou can execute scenarios partially or step-by-step using breakpoints and the Debug menu.\n\n### Setting Breakpoints\n\nPlace a breakpoint on any step where you want execution to pause. You can set multiple breakpoints throughout your scenario to control execution flow precisely.\n\nBreakpoints are useful for inspecting the state of the page at specific points during test execution or for adding new steps mid-scenario.\n\n## Debug Menu Options\n\n### Start\n\nBegins execution from the first step and runs until the first breakpoint is reached, or until the end if no breakpoints are set.\n\n**Use when:** You want to run the scenario from the beginning up to a specific point.\n\n### Continue\n\nResumes execution from the current position and runs until the next breakpoint, or until the end if no more breakpoints exist.\n\n**Use when:** You've paused at a breakpoint and want to continue to the next breakpoint or completion.\n\n### Step\n\nExecutes only the next single step in the scenario, then pauses.\n\n**Use when:** You want to carefully observe each step's execution and its effect on the page.\n\n## Debugging Workflow\n\nUse breakpoints and step-by-step execution to:\n\n- Troubleshoot failing scenarios by isolating problematic steps\n- Verify individual steps work correctly before running the entire scenario\n- Inspect page state at specific points in the test flow\n- Test partial scenario execution during development\n\n### Example Debugging Session\n\n1. Set a breakpoint on step 5 (where you suspect an issue)\n2. Click **Start** in the Debug menu\n3. The scenario runs steps 1-4 and pauses at step 5\n4. Inspect the page to verify the state is correct\n5. Click **Step** to execute step 5 and observe what happens\n6. If the issue is found, fix it; otherwise, continue stepping or use Continue",
       "subsections": []
     },
     {
       "id": "editing",
       "title": "Scenario Editing and Modification",
-      "href": "/docs3/editing",
+      "href": "/docs/editing",
       "content": "# Scenario Editing and Modification\n\nLearn how to modify recorded scenarios by deleting or adding steps.\n\n## Editing Recorded Scenarios\n\nAfter recording a scenario, you can modify it by deleting steps or adding new ones. This flexibility allows you to refine your tests without re-recording from scratch.\n\n## Deleting Steps\n\nRemove unnecessary or incorrect steps from your scenario.\n\n### How to Delete Steps\n\n1. Select the steps you want to delete (you can select multiple steps)\n2. Click the delete button\n3. The selected steps will be removed from the scenario\n\n> **Caution:** Make sure you don't delete steps that other steps depend on. For example, if step 5 uses data extracted in step 3, deleting step 3 will cause step 5 to fail.\n\n## Adding New Steps\n\nInsert new steps into an existing scenario at any position.\n\n### How to Add Steps\n\n1. **Set a Breakpoint:** Place a breakpoint on the step where you want to insert new steps. The new steps will be added before this step.\n2. **Start Debug Mode:** Click **Start** in the Debug menu. The scenario will execute up to the breakpoint and pause.\n3. **Begin Recording:** Click the **Record** button.\n4. **Add New Steps:** Perform the actions you want to add to the scenario.\n5. **Stop Recording:** Click **Record** again to save the new steps.\n\n### Example: Adding Validation Steps\n\nSuppose you have a login scenario, but you forgot to add a step that verifies the user's name appears after login:\n\n1. Set a breakpoint on the step after login completes\n2. Run the scenario up to that breakpoint (it will log you in)\n3. Start recording\n4. Switch to Assert mode and click on the username element\n5. Stop recording\n6. The assertion step is now inserted into your scenario\n\n## Best Practices\n\n- **Use breakpoints wisely:** Place them at logical points in your scenario where you want to insert new steps.\n- **Test incrementally:** After adding or deleting steps, replay the scenario to ensure it still works correctly.\n- **Build complex scenarios incrementally:** Use the combination of breakpoints and recording to build scenarios step by step, testing each section as you go.",
       "subsections": []
     },
     {
       "id": "parameters",
       "title": "Parameter Management",
-      "href": "/docs3/parameters",
+      "href": "/docs/parameters",
       "content": "# Parameter Management\n\nLearn how to manage test data and parameters in your scenarios.",
       "subsections": [
         {
@@ -158,14 +158,14 @@
     {
       "id": "executable-code",
       "title": "Executable Code and Export Options",
-      "href": "/docs3/executable-code",
+      "href": "/docs/executable-code",
       "content": "# Executable Code and Export Options\n\nLearn how to export your scenarios as TypeScript code for CI/CD integration.\n\n## TypeScript Code Generation\n\nEvery recorded scenario is automatically converted into executable TypeScript code that you can view, download, and run independently of the Probium application.\n\n### Why Export as Code?\n\n- ✓ Run tests in your CI/CD pipeline automatically\n- ✓ Execute tests without the Probium application\n- ✓ Version control your tests alongside your code\n- ✓ Customize test execution with custom configurations\n- ✓ Share tests with team members who don't use Probium\n\n## Viewing the Generated Code\n\nYou can view the TypeScript code for any scenario directly in the Probium interface.\n\n### Steps to View Code\n\n1. Open your scenario in the Probium side panel\n2. Click the **Code** button at the bottom of the panel\n3. The generated TypeScript code will be displayed\n4. You can review the code to understand what each step does\n\n> **Benefit:** Viewing the code helps you understand exactly what your scenario does at a technical level and can be useful for debugging.\n\n## Downloading and Running as a Standalone Package\n\nYou can export your scenario as a complete, self-contained package that can run without the Probium application.\n\n### How to Download\n\n1. Click the **Code** button\n2. Click the **Save** button\n3. A ZIP archive will be downloaded to your computer\n4. Extract the archive to a folder of your choice\n\n### What's in the Package?\n\nThe downloaded ZIP archive contains:\n\n- `readme.md` - Setup and execution instructions\n- `package.json` - Node.js dependencies\n- `test files` - Your scenario as TypeScript code\n- `configuration files` - Test runner configuration\n\n### Running the Tests\n\n1. **Read the README:** Open the `readme.md` file and read the instructions\n2. **Install Dependencies:** Run the command specified in the readme (typically `npm install`)\n3. **Execute Tests:** Run the test command from the readme (typically `npm test`)\n4. **View Results:** Test results will be displayed in your terminal\n\n## CI/CD Integration\n\nThe exported package can be integrated into your continuous integration and deployment pipelines, enabling automated testing as part of your development workflow.\n\n### Common Integration Points\n\n- **GitHub Actions:** Run tests on every commit or pull request\n- **GitLab CI:** Include in your .gitlab-ci.yml pipeline\n- **Jenkins:** Add as a build step in your Jenkins jobs\n- **Azure DevOps:** Include in your Azure Pipelines\n- **Scheduled Runs:** Set up cron jobs to run tests regularly\n\n### Best Practices\n\n- **Version Control:** Commit exported tests to your repository to track changes over time\n- **Environment Variables:** Use environment variables for URLs and credentials in CI/CD\n- **Regular Updates:** Re-export scenarios when you make changes in Probium\n- **Test Isolation:** Ensure tests can run independently of each other",
       "subsections": []
     },
     {
       "id": "collaboration",
       "title": "Collaboration and Project Management",
-      "href": "/docs3/collaboration",
+      "href": "/docs/collaboration",
       "content": "# Collaboration and Project Management\n\nLearn how to work with teams and manage shared test scenarios.",
       "subsections": [
         {
