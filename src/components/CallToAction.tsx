@@ -17,7 +17,7 @@ export function CallToAction() {
           Basic plan is free.
         </p>
         <div className="mt-10 flex justify-center">
-          <DownloadButton color="white" className="text-blue-600" />
+          <DownloadButton color="white" className="!text-black hover:bg-white hover:!text-black" />
         </div>
       </Container>
     </section>

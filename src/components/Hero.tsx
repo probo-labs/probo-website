@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 import heroBackground from '@/images/background-blueish.png'
 
 const HERO_VIDEO_URL =
-  'https://www.youtube.com/embed/13WLhM_T0iU?autoplay=1&mute=1&controls=0&loop=1&playlist=13WLhM_T0iU&modestbranding=1&rel=0'
+  'https://www.youtube.com/embed/qTVGrhmRow8?autoplay=1&mute=1&controls=1&loop=1&playlist=qTVGrhmRow8&modestbranding=1&rel=0'
 
 export function Hero() {
   return (
@@ -32,7 +32,7 @@ export function Hero() {
               Introducing&nbsp;<strong>Probium</strong>
             </span>
             <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              AI Automation that Lives within your Browser
+              Automation that Lives within your Browser<sup>*</sup>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
               Capture real customer journeys intuitively in your browser and turn them into resilient, reusable automation.
@@ -49,6 +49,9 @@ export function Hero() {
             </div>
             <p className="mt-12 text-sm font-semibold uppercase tracking-widest text-slate-500">
               Trusted by Developers, Product Owners and QA teams shipping daily
+            </p>
+            <p className="mt-2 text-sm text-slate-500">
+              * Yeah, we use AI...
             </p>
           </div>
           <div className="relative">
@@ -68,9 +71,6 @@ export function Hero() {
                 />
               </div>
             </div>
-            <p className="mt-4 text-sm font-medium text-slate-800">
-              Watch Probium in action
-            </p>
           </div>
         </div>
       </Container>
