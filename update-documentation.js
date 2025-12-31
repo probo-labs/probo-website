@@ -3,12 +3,12 @@ const path = require('path');
 
 async function updateDocumentation() {
   try {
-    // Read the documentation.json file
-    const docPath = path.join(__dirname, 'src', 'data', 'documentation.json');
+    // Read the generated-documentation.json file
+    const docPath = path.join(__dirname, 'src', 'data', 'generated-documentation.json');
     const docContent = await fs.readFile(docPath, 'utf-8');
     const documentation = JSON.parse(docContent);
 
-    console.log('Reading documentation.json...');
+    console.log('Reading generated-documentation.json...');
 
     // Process each section
     for (const section of documentation.sections) {

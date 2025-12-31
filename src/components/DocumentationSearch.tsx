@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import documentation from '@/data/documentation.json'
+import documentation from '@/data/generated-documentation.json'
 
 type SearchResult = {
   title: string

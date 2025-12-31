@@ -6,13 +6,13 @@ This document explains how the Probium documentation is structured and how to ma
 
 The documentation system uses a dual approach:
 1. **Source files**: Markdown files organized in folders (`src/data/docs/`)
-2. **JSON database**: A single JSON file for application consumption (`src/data/documentation.json`)
+2. **JSON database**: A single JSON file for application consumption (`src/data/generated-documentation.json`)
 
 The documentation is authored in markdown files and synchronized to the JSON file using an automated script.
 
 ## Directory Structure
 
-The documentation follows a hierarchical folder structure based on the URL paths defined in `documentation.json`:
+The documentation follows a hierarchical folder structure based on the URL paths defined in `generated-documentation.json`:
 
 ```
 src/data/docs/
@@ -45,7 +45,7 @@ src/data/docs/
 
 ### Folder Names
 
-Folder names are derived from the `href` and `anchor` values in `documentation.json`:
+Folder names are derived from the `href` and `anchor` values in `generated-documentation.json`:
 
 **Main sections** (from `href` parameter):
 - `/docs` → `docs/`
@@ -65,7 +65,7 @@ All content files are named **`content.md`** regardless of their location in the
 ### Workflow
 
 1. **Edit markdown files** in `src/data/docs/` folder structure
-2. **Run the sync script** to update `documentation.json`
+2. **Run the sync script** to update `generated-documentation.json`
 3. **Commit both** the markdown files and the updated JSON
 
 ### Step-by-Step Instructions
@@ -86,13 +86,13 @@ All content files are named **`content.md`** regardless of their location in the
 4. Verify the changes:
    ```bash
    # Check git diff to see the updated JSON
-   git diff src/data/documentation.json
+   git diff src/data/generated-documentation.json
    ```
 
 5. Commit your changes:
    ```bash
    git add src/data/docs/
-   git add src/data/documentation.json
+   git add src/data/generated-documentation.json
    git commit -m "Update documentation: [describe your changes]"
    ```
 
@@ -103,7 +103,7 @@ All content files are named **`content.md`** regardless of their location in the
 
 ### What It Does
 
-1. Reads `src/data/documentation.json`
+1. Reads `src/data/generated-documentation.json`
 2. For each section and subsection:
    - Locates the corresponding `content.md` file
    - Reads the markdown content
@@ -121,7 +121,7 @@ node update-documentation.js
 
 The script provides progress feedback:
 ```
-Reading documentation.json...
+Reading generated-documentation.json...
 ✓ Updated: /docs
 ✓ Updated: /docs/installation
 ✓ Updated: /docs/authentication
@@ -133,7 +133,7 @@ Reading documentation.json...
 
 ### Adding a Main Section
 
-1. Add the section to `documentation.json`:
+1. Add the section to `generated-documentation.json`:
    ```json
    {
      "id": "new-section",
@@ -163,7 +163,7 @@ Reading documentation.json...
 
 ### Adding a Subsection
 
-1. Add the subsection to the parent section in `documentation.json`:
+1. Add the subsection to the parent section in `generated-documentation.json`:
    ```json
    {
      "id": "parent-section",
@@ -261,7 +261,7 @@ If you see warnings like:
 This means:
 - The folder or file doesn't exist
 - There's a mismatch between JSON structure and file structure
-- Check the `href` or `anchor` values in `documentation.json`
+- Check the `href` or `anchor` values in `generated-documentation.json`
 
 ### Path Mismatches
 
@@ -273,7 +273,7 @@ Ensure folder names match the URL structure:
 ### JSON Syntax Errors
 
 If the script fails with a parse error:
-- Check `documentation.json` for syntax errors
+- Check `generated-documentation.json` for syntax errors
 - Ensure proper JSON formatting
 - Validate with a JSON linter
 
@@ -294,7 +294,7 @@ Markdown Files (src/data/docs/)
         ↓
 update-documentation.js (sync script)
         ↓
-JSON File (src/data/documentation.json)
+JSON File (src/data/generated-documentation.json)
         ↓
 Application (reads JSON)
 ```

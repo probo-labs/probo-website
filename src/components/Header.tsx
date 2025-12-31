@@ -23,7 +23,7 @@ const navigation = [
 
 const resources = [
   { name: 'FAQ', href: '/#faq' },
-  { name: 'How To', href: '/howto' },
+  { name: 'Docs', href: '/docs' },
 ]
 
 function MobileNavLink({
@@ -101,7 +101,7 @@ export function Header() {
       <Container className="flex items-center justify-between gap-x-6">
         <nav className="flex w-full items-center justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#hero" aria-label="ProboLabs.ai home" className="inline-flex">
+            <Link href="/#hero" aria-label="ProboLabs.ai home" className="inline-flex">
               <Logo imageClassName="h-7 w-auto md:h-8" />
             </Link>
             <div className="hidden md:flex md:items-center md:gap-x-6">
@@ -131,16 +131,16 @@ export function Header() {
                   )}
                 >
                   <Link
-                    href="#faq"
+                    href="/#faq"
                     className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
                   >
                     FAQ
                   </Link>
                   <Link
-                    href="/howto"
+                    href="/docs"
                     className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
                   >
-                    How To
+                    Docs
                   </Link>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import { MarkdownContent } from '@/components/MarkdownContent'
-import documentation from '@/data/documentation.json'
+import documentation from '@/data/generated-documentation.json'
 
 export default function DocsIntroPage() {
   const introSection = documentation.sections.find(s => s.id === 'introduction')
