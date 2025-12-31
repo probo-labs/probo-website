@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { MarkdownContent } from '@/components/MarkdownContent'
-import documentation from '@/data/documentation.json'
+import documentation from '@/data/generated-documentation.json'
 
 export async function generateStaticParams() {
   return documentation.sections
