@@ -27,7 +27,7 @@ export function DownloadButton({ children, showIcon = true, ...props }: Download
   const getDownloadUrl = (currentPlatform: string): string => {
     // macOS
     if (currentPlatform === 'macOS') {
-      return 'https://github.com/probo-labs/probium/releases/download/latest/Probium.dmg'
+      return 'https://github.com/probo-labs/probium/releases/latest/downloads/Probium.dmg'
     }
 
     // Windows
