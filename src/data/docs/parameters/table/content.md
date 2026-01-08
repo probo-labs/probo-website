@@ -23,3 +23,5 @@ The Parameters table stores all textual data captured during scenario recording 
 ### Viewing the Parameters Table
 
 Click the **Params** button in the bottom toolbar of the side panel. The parameters table will open in the main browser window.
+
+<img src="/images/screenshots/open-parameters.png" alt="Params button" width="500" />

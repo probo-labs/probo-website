@@ -10,9 +10,13 @@ You can execute scenarios partially or step-by-step using breakpoints and the De
 
 Place a breakpoint on any step where you want execution to pause. You can set multiple breakpoints throughout your scenario to control execution flow precisely.
 
+<img src="/images/screenshots/set-breakpoint.png" alt="Set breakpoint" width="300" />
+
 Breakpoints are useful for inspecting the state of the page at specific points during test execution or for adding new steps mid-scenario.
 
 ## Debug Menu Options
+
+<img src="/images/screenshots/debug-options.png" alt="Debug options" width="300" />
 
 ### Start
 

@@ -4,7 +4,8 @@ Assert steps verify that specific page elements contain expected text content. T
 
 ### How to Record an Assertion
 
-1. During recording, switch to **Assert** mode using the Change mode button
+1. During recording, switch to **Assert** mode
+<img src="/images/screenshots/assert-mode.png" alt="Assert mode" width="200" />
 2. Click on the element whose text content you want to verify
 3. The current text content will be captured and saved
 

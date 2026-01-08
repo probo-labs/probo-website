@@ -1,12 +1,23 @@
 'use client'
 
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 export function MarkdownContent({ content }: { content: string }) {
   return (
     <div className="prose prose-slate max-w-none">
       <ReactMarkdown
+        rehypePlugins={[rehypeRaw]}
         components={{
+          img: ({ src, alt, ...props }) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={src}
+              alt={alt || ''}
+              className="my-4 rounded-lg"
+              {...props}
+            />
+          ),
           h1: ({ children, ...props }) => (
             <h1 className="text-4xl font-bold text-slate-900 mb-4 mt-8" {...props}>
               {children}

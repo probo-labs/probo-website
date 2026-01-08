@@ -4,6 +4,7 @@
 
 1. Open the Parameters table
 2. Click the **Edit** button
+<img src="/images/screenshots/param-table-edit.png" alt="Param table edit" width="300" />
 3. Modify the parameter values as needed
 4. Confirm or cancel your changes
 
@@ -15,11 +16,15 @@ You can link parameters together by referencing one parameter's variable name in
 
 When editing a parameter value, you can reference another parameter by using its variable name. This creates a link where the value is dynamically pulled from the referenced parameter.
 
-**Example:** If parameter `user_email` has the value "test@example.com", you can set another parameter's value to reference `user_email` so it always uses the same email.
+<img src="/images/screenshots/param-linking.png" alt="Param linking" width="600" />
+
+**Example:** If parameter `user_email` has the value "test@example.com", you can set another parameter's value to reference `${user_email}` so it always uses the same email.
 
 #### Automatic Binding
 
-Click the **Binding** button to automatically link parameters with identical text values:
+Click the **Bind values** button to automatically link parameters with identical text values:
+
+<img src="/images/screenshots/param-table-binding.png" alt="Param binding" width="300" />
 
 1. Probium groups all parameters with the same value
 2. For each group, the first parameter becomes the primary

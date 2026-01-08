@@ -14,6 +14,7 @@ Use Wait For steps when:
 ### How to Record
 
 1. Switch to **Wait for** mode
+<img src="/images/screenshots/wait-for-mode.png" alt="Wait for mode" width="200" />
 2. Wait for the desired element to appear on the page
 3. Click on the element
 4. The step will be recorded with the element's selector and text content

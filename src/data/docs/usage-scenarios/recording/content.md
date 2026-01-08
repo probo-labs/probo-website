@@ -8,7 +8,9 @@ Recording allows you to capture all interactions with a website, which can then 
 2. **Open the Side Panel:** Click the Probium icon in the browser toolbar to open the side panel interface.
 3. **Navigate to Target Website:** In the main browser window, navigate to the website you want to test.
 4. **Start Recording:** Click the **Record** button in the side panel.
+<img src="/images/screenshots/start-record.png" alt="Start record" width="300" />
 5. **Interact with the Website:** Perform your desired actions (clicks, form filling, scrolling, etc.). All interactions will be recorded.
 6. **Stop Recording:** Click the **Record** button again to stop and save your scenario.
+<img src="/images/screenshots/stop-record.png" alt="Stop record" width="300" />
 
 > **Tip:** Plan your test scenario before recording. Think about the user flow you want to capture and any validations you want to include.

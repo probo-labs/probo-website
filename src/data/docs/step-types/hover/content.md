@@ -12,6 +12,7 @@ Hover steps simulate moving the mouse cursor over a specific page element withou
 ### How to Record
 
 1. Switch to **Hover** mode
+<img src="/images/screenshots/hover-mode.png" alt="Hover mode" width="200" />
 2. Wait for the target element to appear
 3. Click on the element you want to hover over
 4. During replay, the cursor will hover over this element

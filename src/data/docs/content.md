@@ -17,13 +17,5 @@ With Probium, you can capture complex user interactions, validate page content, 
 - ✓ Team collaboration with project sharing
 - ✓ Export tests as TypeScript code for automated testing
 
-### Getting Started
-
-To get started with Probium, follow these steps:
-
-1. Install Probium from the Microsoft Store
-2. Sign up or log in to your account
-3. Launch the application and open the side panel
-4. Start recording your first test scenario
 
 Use the navigation menu on the left to explore different sections of the documentation.

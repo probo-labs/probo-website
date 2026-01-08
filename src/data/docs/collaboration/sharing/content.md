@@ -18,7 +18,9 @@ Share your project with team members to enable collaboration.
 #### How to Add a Collaborator
 
 1. **Locate the Share Icon:** Click the **Share project** icon next to the project name
+<img src="/images/screenshots/project.png" alt="Code" width="300" />
 2. **Enter Email:** In the dialog that opens, enter the collaborator's email address in the **Add collaborator** field
+<img src="/images/screenshots/add-collaborator.png" alt="Code" width="300" />
 3. **Add User:** Click **Add**
 4. **Confirmation:** The user will now have access to all scenarios in the project
 
