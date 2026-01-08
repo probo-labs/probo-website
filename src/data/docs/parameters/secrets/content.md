@@ -11,10 +11,10 @@ We do **NOT** store sensitive information (such as passwords used in authenticat
 When you record scenarios involving sensitive information, these values are automatically marked as secret:
 
 - Login passwords
-- API keys
 - Authentication tokens
-- Credit card information
 - Other confidential data
+
+<img src="/images/screenshots/secret-parameters.png" alt="Secret parameters" width="300" />
 
 ### How Secret Parameters Work
 

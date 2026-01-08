@@ -8,13 +8,18 @@ To prevent conflicts when multiple team members work on the same project, Probiu
 
 The scenario is automatically locked from editing by other team members. This prevents two people from making conflicting changes simultaneously.
 
+<img src="/images/screenshots/locked-scenario.png" alt="Locked scenario" width="300" />
+
 **Other Team Members**
 
 Can view the scenario's contents but cannot make changes while it's locked. They'll see an indication that the scenario is being edited by another user.
 
 **Lock Release**
 
-The lock is automatically released when the user opens a different scenario or starts recording a new one. This ensures locks don't remain indefinitely.
+The lock is automatically released when the user opens a different scenario or starts recording a new one. This ensures locks don't remain indefinitely. The lock can also be released manually.
+
+
+<img src="/images/screenshots/release-lock.png" alt="Release lock" width="300" />
 
 ### Best Practices for Team Collaboration
 

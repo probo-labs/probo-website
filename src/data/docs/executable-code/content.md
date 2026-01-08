@@ -22,6 +22,7 @@ You can view the TypeScript code for any scenario directly in the Probium interf
 
 1. Open your scenario in the Probium side panel
 2. Click the **Code** button at the bottom of the panel
+<img src="/images/screenshots/code.png" alt="Code" width="300" />
 3. The generated TypeScript code will be displayed
 4. You can review the code to understand what each step does
 

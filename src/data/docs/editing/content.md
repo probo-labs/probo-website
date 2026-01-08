@@ -12,8 +12,10 @@ Remove unnecessary or incorrect steps from your scenario.
 
 ### How to Delete Steps
 
-1. Select the steps you want to delete (you can select multiple steps)
+1. Select the steps you want to delete by clicking on them (you can select multiple steps)
 2. Click the delete button
+<img src="/images/screenshots/delete-steps.png" alt="Delete steps" width="300" />
+
 3. The selected steps will be removed from the scenario
 
 > **Caution:** Make sure you don't delete steps that other steps depend on. For example, if step 5 uses data extracted in step 3, deleting step 3 will cause step 5 to fail.

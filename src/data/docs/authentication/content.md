@@ -4,11 +4,11 @@ Learn how to sign up, log in, and manage your Probium account.
 
 ## Signing Up and Logging In
 
-If you haven't signed in to Probium on your current computer, you'll see a "Sign up at ProboLabs.ai" button in the side panel when you open the application.
+If you haven't signed in to Probium on your current computer, you'll see a "Create Free Account" button in the side panel when you open the application.
 
 ## Authentication Methods
 
-Click the sign-up button to access the authentication page, where you can choose from the following options:
+Click the "Create Free Account" button to access the authentication page, where you can choose from the following options:
 
 ### OAuth Providers
 
@@ -29,7 +29,7 @@ When you register with email and password or sign in for the first time using Go
 
 You can subsequently sign in using any authentication method, as long as it uses the same email address associated with your account.
 
-### Example Scenario
+### For Example:
 
 **Step 1:** You initially sign up using Google with email address: user@example.com
 

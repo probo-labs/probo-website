@@ -11,3 +11,5 @@ This is the default mode for recording standard user interactions with the websi
 - Any other standard user interaction
 
 **How to use:** Ensure that Interact mode is selected using the **Change mode** button, then perform your desired actions on the website.
+
+<img src="/images/screenshots/interact-mode.png" alt="Interact mode" width="200" />

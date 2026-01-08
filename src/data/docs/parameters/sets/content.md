@@ -14,6 +14,7 @@ You can create multiple parameter sets for a single scenario, allowing you to ru
 
 1. Click on the scenario's **Details**
 2. In the **Active Parameter Set** dropdown, select the desired set
+<img src="/images/screenshots/param-set-selection.png" alt="Param set selection" width="300" />
 3. When you replay the scenario, it will use the selected parameter set
 
 ### Use Cases for Multiple Parameter Sets

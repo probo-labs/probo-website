@@ -12,6 +12,7 @@ Extract steps capture text content from page elements so you can use this data i
 ### How to Record
 
 1. Switch to **Extract** mode
+<img src="/images/screenshots/extract-mode.png" alt="Extract mode" width="200" />
 2. Click on the element containing the text you want to extract
 3. The extracted value is saved as a parameter
 4. You can reference this parameter in later steps

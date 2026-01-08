@@ -6,11 +6,14 @@ This step type handles authentication using time-based one-time passwords, simil
 
 1. Click the **Actions** button
 2. Select **OTP** from the dropdown
+<img src="/images/screenshots/otp.png" alt="OTP" width="300" />
 3. In the OTP Wizard, choose **TOTP (Shared secret)**
+<img src="/images/screenshots/otp-wizard-totp.png" alt="OTP Wizard TOTP" width="300" />
 4. Enter the following information:
    - Secret key (the shared secret from your authenticator setup)
    - Code length (typically 6 digits)
    - Generation algorithm (usually SHA-1)
+<img src="/images/screenshots/totp-secret.png" alt="TOTP Secret" width="300" />
 5. Click **Next**
 6. Close the OTP Wizard
 7. Click on the input field where the TOTP code should be entered
