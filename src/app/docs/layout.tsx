@@ -3,6 +3,7 @@ import { Logo } from '@/components/Logo'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { DocumentationSearch } from '@/components/DocumentationSearch'
+import { ScrollToHash } from '@/components/ScrollToHash'
 import documentation from '@/data/generated-documentation.json'
 
 export default function DocsLayout({
@@ -13,6 +14,7 @@ export default function DocsLayout({
   return (
     <>
       <Header />
+      <ScrollToHash />
       <div className="pt-[72px]">
         <div className="flex">
           {/* Sidebar */}
