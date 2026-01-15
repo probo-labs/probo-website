@@ -28,6 +28,14 @@ When you record scenarios involving sensitive information, these values are auto
 Probium prioritizes security by storing sensitive data, such as passwords, locally on your computer rather than on its servers. These values are stored in a file named `.env` in your home directory (e.g., `C://Users/<Your username>/.probium/.env` on Windows).
 
 #### Method 1: Using the App Settings
+
+<div style="max-width: 400px; margin: 2rem 0;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/8b9OxzW7kTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+ </div>
+
+
 1. Click on **Settings** at the bottom of the side panel.
 <img src="/images/screenshots/settings-button.png" alt="Settings button" width="400" />
 2. Locate the **Environmental Variables** section.
