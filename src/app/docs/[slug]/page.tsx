@@ -29,7 +29,7 @@ export default async function DocsSectionPage({
       {section.subsections && section.subsections.length > 0 && (
         <div className="space-y-8">
           {section.subsections.map((subsection) => (
-            <section key={subsection.id} id={subsection.id} className="scroll-mt-6">
+            <section key={subsection.id} id={subsection.id} className="scroll-mt-24">
               <MarkdownContent content={subsection.content} />
             </section>
           ))}
