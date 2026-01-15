@@ -16,7 +16,7 @@ export default function DocsLayout({
       <div className="pt-[72px]">
         <div className="flex">
           {/* Sidebar */}
-          <aside className="w-72 flex-shrink-0 border-r border-slate-200 bg-white min-h-screen">
+          <aside className="w-72 flex-shrink-0 border-r border-slate-200 bg-white sticky top-[72px] h-[calc(100vh-72px)] overflow-y-auto">
             <div className="p-6">
               <h2 className="text-lg font-semibold text-slate-900 mb-4">
                 Documentation

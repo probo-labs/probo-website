@@ -10,6 +10,7 @@ The Ask AI step allows you to formulate questions in natural language that the A
 3. Click the "Add to interactions list" button
 <img src="/images/screenshots/ask-ai.png" alt="Ask AI" width="300" />
 4. The "Ask AI" step will be added to the current scenario.
+5. Enabling the assertion switch will convert this step into an assertion.
 <img src="/images/screenshots/ask-ai-step.png" alt="Ask AI step" width="300" />
 
 ### Example Questions
