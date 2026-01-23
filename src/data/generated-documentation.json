@@ -187,6 +187,39 @@
           "content": "## Access Control and Scenario Locking\r\n\r\nTo prevent conflicts when multiple team members work on the same project, Probium implements an automatic locking system.\r\n\r\n### How Locking Works\r\n\r\n**When a User Opens a Scenario**\r\n\r\nThe scenario is automatically locked from editing by other team members. This prevents two people from making conflicting changes simultaneously.\r\n\r\n<img src=\"/images/screenshots/locked-scenario.png\" alt=\"Locked scenario\" width=\"300\" />\r\n\r\n**Other Team Members**\r\n\r\nCan view the scenario's contents but cannot make changes while it's locked. They'll see an indication that the scenario is being edited by another user.\r\n\r\n**Lock Release**\r\n\r\nThe lock is automatically released when the user opens a different scenario or starts recording a new one. This ensures locks don't remain indefinitely. The lock can also be released manually.\r\n\r\n\r\n<img src=\"/images/screenshots/release-lock.png\" alt=\"Release lock\" width=\"300\" />\r\n\r\n### Best Practices for Team Collaboration\r\n\r\n1. **Close scenarios when done:** Switch to a different scenario or close the side panel when you're finished editing to release the lock\r\n2. **Communicate with team:** Use team chat or project management tools to coordinate who's working on which scenarios\r\n3. **Check lock status:** If a scenario is locked, contact the team member who has it open if you need to make urgent changes\r\n4. **Organize by feature:** Create separate scenarios for different features to minimize editing conflicts\r\n5. **Regular sync:** Regularly check for updates from team members to stay current with scenario changes\r\n\r\n### Collaboration Workflow Example\r\n\r\n**Morning Standup:** Team discusses which scenarios need work and assigns tasks\r\n\r\n**Developer A:** Opens \"Login Flow\" scenario to add 2FA steps, scenario is locked\r\n\r\n**Developer B:** Tries to open \"Login Flow\", sees it's locked by Developer A, works on \"Checkout Flow\" instead\r\n\r\n**Developer A Finishes:** Switches to a different scenario, lock on \"Login Flow\" is released\r\n\r\n**Developer B Returns:** Can now edit \"Login Flow\" to add parameter sets for different users"
         }
       ]
+    },
+    {
+      "id": "sequences",
+      "title": "Sequences",
+      "href": "/docs/sequences",
+      "content": "# Sequences\r\n\r\nSequences allow you to group frequently repeated steps into reusable blocks. This simplifies scenario management and ensures consistency across your testing projects.\r\n\r\n### Creating a Sequence\r\n1. In your scenario, select several consecutive steps you wish to group.\r\n2. Open the **Actions** menu and select **Create sequence**.\r\n<img src=\"/images/screenshots/create-sequence.png\" alt=\"Create sequence\" width=\"300\" />\r\n3. To rename it, click on the default name and edit the text.\r\n<img src=\"/images/screenshots/rename-sequence.png\" alt=\"Rename sequence\" width=\"300\" />\r\n\r\n### Using Sequences\r\n**To add to a scenario:** Click the **Plus (+)** icon, select **Add sequence**, choose your sequence, and click **Add**.\r\n<img src=\"/images/screenshots/add-seq.png\" alt=\"Add sequence\" width=\"300\" />\r\n<img src=\"/images/screenshots/select-seq.png\" alt=\"Select sequence\" width=\"300\" />\r\n\r\n**To start a new scenario with a sequence:** Select **Add sequence** on the initial creation screen before recording.\r\n<img src=\"/images/screenshots/start-from-seq.png\" alt=\"Start from sequence\" width=\"300\" />\r\n\r\n### Ungrouping and removing sequences\r\n\r\n<img src=\"/images/screenshots/ungroup-remove-seq.png\" alt=\"Ungroup remove sequence\" width=\"300\" />\r\n\r\nTo break a sequence back into individual steps:\r\n1. Right-click the sequence in the scenario editor.\r\n2. Select **Ungroup**.\r\n\r\nTo remove a sequence from a scenario:\r\n1. Right-click the sequence in the scenario editor.\r\n2. Select **Remove**.\r\n\r\n\r\n",
+      "subsections": []
+    },
+    {
+      "id": "test-suites",
+      "title": "Test Suites",
+      "href": "/docs/test-suites",
+      "content": "# Test Suites\r\n\r\nTest suites allow you to group multiple scenarios from the same project and execute them together. This is efficient for running comprehensive test batches and monitoring results in one place.",
+      "subsections": [
+        {
+          "id": "create",
+          "title": "Creating Test Suites",
+          "anchor": "#create",
+          "content": "### Creating a Test Suite\r\n\r\n1. Click the **Suites** button in the bottom toolbar of the application. The **Test suites** tab will open.\r\n<img src=\"/images/screenshots/test-suite.png\" alt=\"Test suite button\" width=\"300\" />\r\n2. Click **New test suite**.\r\n<img src=\"/images/screenshots/new-test-suite.png\" alt=\"New test suite button\" width=\"200\" />\r\n3. Enter a name for your suite.\r\n4. Select the **Project** containing the scenarios you want to include.\r\n6. Select the scenarios you want to add.\r\n7. Save your selection.\r\n<img src=\"/images/screenshots/create-test-suite.png\" alt=\"Create suite button\" width=\"600\" />"
+        },
+        {
+          "id": "running",
+          "title": "Running Test Suites",
+          "anchor": "#running",
+          "content": "### Running a Test Suite from the Interface\r\n1. Open the **Suites** section and locate your suite under the **ALL TEST SUITES** menu.\r\n<img src=\"/images/screenshots/test-suite-in-list.png\" alt=\"Test suite in list\" width=\"300\" />\r\n2. Click the **Run** icon next to the desired suite.\r\n3. A new entry will appear in the execution list. Click it to monitor real-time progress.\r\n4. Once finished, click **View report** to open a detailed report of the test results.\r\n<img src=\"/images/screenshots/test-suite-run-result.png\" alt=\"Test suite run result\" width=\"800\" />\r\n"
+        },
+        {
+          "id": "running-cicd",
+          "title": "Running in CI/CD",
+          "anchor": "#running-cicd",
+          "content": "### Running in CI/CD\r\nTo integrate your test suite into a CI/CD pipeline:\r\n* Open the context menu for the specific test suite.\r\n* Select the **CI/CD** option to receive setup instructions.\r\n<img src=\"/images/screenshots/test-suite-context-menu.png\" alt=\"Test suite context-menu\" width=\"300\" />\r\n\r\n> **Note:** All scenarios in a suite must belong to the same project. If you move a scenario to a different project, it will be automatically removed from the test suite."
+        }
+      ]
     }
   ]
 }
