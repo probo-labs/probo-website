@@ -20,3 +20,13 @@ For advanced use cases, you can execute arbitrary Node.js scripts as part of you
 - Integrate with external services
 
 > **Advanced Feature:** Custom scripts give you unlimited flexibility to extend Probium's capabilities for your specific testing needs.
+
+### How to Change the Code of the Script
+
+
+1. Within your recorded scenario, find the specific **Script** step you wish to modify.
+2. Click on the **icon** located on that step.
+<img src="/images/screenshots/script-step-in-list.png" alt="Script step in list" width="300" />
+3.  This will open the Interaction Browser page, where you can see the current code being executed for this step.
+4.  Click on the **edit icon** (pencil) to edit this code.
+<img src="/images/screenshots/script-step-int-br.png" alt="Script step in interaction browser" width="500" />
