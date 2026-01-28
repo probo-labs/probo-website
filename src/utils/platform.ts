@@ -1,6 +1,10 @@
 /**
  * Detects the user's operating system platform
  * Returns 'Windows', 'macOS', 'Linux', or 'Unknown'
+ *
+ * User-agent is checked first because it can be overridden (e.g. Chrome DevTools),
+ * while navigator.platform is not. When testing with a Linux UA on macOS,
+ * platform stays "MacIntel" and would incorrectly yield macOS otherwise.
  */
 export function detectPlatform(): string {
   if (typeof window === 'undefined') {
@@ -10,19 +14,28 @@ export function detectPlatform(): string {
   const userAgent = window.navigator.userAgent.toLowerCase()
   const platform = window.navigator.platform.toLowerCase()
 
-  if (platform.includes('win') || userAgent.includes('windows')) {
+  // Prefer userAgent (overridable) over platform (not overridable in DevTools)
+  if (userAgent.includes('windows')) {
     return 'Windows'
   }
-
-  if (platform.includes('mac') || userAgent.includes('macintosh') || userAgent.includes('mac os x')) {
+  if (userAgent.includes('linux') && !userAgent.includes('android')) {
+    return 'Linux'
+  }
+  if (userAgent.includes('macintosh') || userAgent.includes('mac os x')) {
     return 'macOS'
   }
 
-  if (platform.includes('linux') || userAgent.includes('linux')) {
+  // Fallback to platform when userAgent doesn't indicate OS
+  if (platform.includes('win')) {
+    return 'Windows'
+  }
+  if (platform.includes('linux')) {
     return 'Linux'
   }
+  if (platform.includes('mac')) {
+    return 'macOS'
+  }
 
-  // Fallback for other platforms
   return 'Unknown'
 }
 

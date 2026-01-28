@@ -37,7 +37,7 @@ export function DownloadButton({ children, showIcon = true, ...props }: Download
 
     // Linux
     if (currentPlatform === 'Linux') {
-      return 'https://drive.google.com/file/d/145b3aJk2B4I6nOam8UlkWBvOeAciqzmw/view?usp=drive_link'
+      return 'https://github.com/probo-labs/probium/releases/latest/download/Probium.deb'
     }
 
     // Default to Windows installer if platform is unknown
