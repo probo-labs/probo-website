@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
@@ -18,12 +19,7 @@ const faqs = [
     {
       question: 'What is the difference between Probium and other automation tools?',
       answer:
-        'Probium is a browser-based automation tool that allows you to record and replay user journeys. It is different from other automation tools in that it is browser-based and you own generated code.',
-    },
-    {
-      question: 'Can we integrate with our CI/CD pipeline?',
-      answer:
-        'Yes. Probium plugs into GitHub Actions, GitLab and BitBucket Pipelines.',
+        'Probium provides an intuitive UI/UX with the browser taking center stage. You record tests once and Probium keeps them running as your UI changes, taking care of locators and event synchronization. Tests run locally on your machine, not in the cloud. You get Playwright code which is yours to keep even if you decide to switch to a different tool.',
     },
   ],
   [
@@ -52,12 +48,34 @@ const faqs = [
     {
       question: 'Do you offer on-prem or private cloud?',
       answer:
-        'Enterprise plans support single-tenantdeployments. Talk to our team to design the right architecture for your security needs.',
+        'Enterprise plans support single-tenant deployments. Talk to our team to design the right architecture for your security needs.',
     },
     {
       question: 'Where can I talk to a human?',
+      answer: (
+        <>
+          Email{' '}
+          <a
+            href="mailto:support@probolabs.ai"
+            className="text-blue-600 hover:text-blue-500 underline"
+          >
+            support@probolabs.ai
+          </a>{' '}
+          or join our{' '}
+          <Link
+            href="https://discord.gg/m2gX5AG9TJ"
+            className="text-blue-600 hover:text-blue-500 underline"
+          >
+            Discord channel
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: 'Can we integrate with our CI/CD pipeline?',
       answer:
-        'Email support@probolabs.ai or join our discord channel.',
+        'Yes. Probium plugs into any CI/CD pipeline, including GitHub Actions, GitLab, Jenkins and BitBucket.',
     },
   ],
 ]
@@ -108,7 +126,7 @@ export function Faqs() {
                     <h3 className="font-display text-lg/7 text-slate-900">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-slate-600">{faq.answer}</p>
+                    <div className="mt-4 text-sm text-slate-600">{faq.answer}</div>
                   </li>
                 ))}
               </ul>

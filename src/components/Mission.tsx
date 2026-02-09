@@ -11,7 +11,7 @@ export function Mission() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-            Our mission is to democratize web application automation at scale.
+            Our mission is to democratize web application testing at scale.
           </h2>
         </div>
         <div className="mt-12 space-y-12">

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ProboLabs — Record E2E tests that don’t break</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chromium-based desktop app to record resilient Playwright E2E tests that self-heal as your UI changes." />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      color: #111;
+      background: #fff;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+    h1 {
+      font-size: 44px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    .muted {
+      color: #666;
+      font-size: 15px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .badges {
+      margin: 16px 0;
+    }
+    .badge {
+      display: inline-block;
+      border: 1px solid #ddd;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      background: #fafafa;
+    }
+    .cta {
+      margin-top: 24px;
+    }
+    .btn-primary {
+      background: #000;
+      color: #fff;
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 12px;
+    }
+    .btn-secondary {
+      color: #000;
+      text-decoration: underline;
+      font-size: 16px;
+    }
+    .section {
+      border-top: 1px solid #eee;
+      padding-top: 80px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .step {
+      border: 1px solid #eee;
+      padding: 24px;
+      border-radius: 10px;
+    }
+    .pain {
+      background: #fafafa;
+      padding: 80px 24px;
+    }
+    .pain ul {
+      font-size: 18px;
+    }
+    .footer-cta {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .footer-cta h2 {
+      color: #fff;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="container hero">
+  <div>
+    <h1>Record E2E tests that don’t break.</h1>
+    <p>
+      ProboLabs is a <strong>Chromium‑based desktop app</strong> that records real user flows,
+      generates Playwright tests, and <strong>automatically heals them</strong> as your UI changes.
+    </p>
+
+    <div class="badges">
+      <span class="badge">Desktop app</span>
+      <span class="badge">Runs locally</span>
+      <span class="badge">Outputs Playwright</span>
+      <span class="badge">Self‑healing selectors</span>
+    </div>
+
+    <div class="cta">
+      <a href="#download" class="btn-primary">Download the desktop app (free)</a>
+      <a href="#demo" class="btn-secondary">Watch 90‑sec demo</a>
+    </div>
+
+    <p class="muted">
+      Mac • Windows • Linux · Local execution · No cloud replay
+    </p>
+  </div>
+
+  <div>
+    <!-- Replace with real GIF or screenshot -->
+    <img src="recorder-placeholder.png" alt="ProboLabs desktop recorder" style="width:100%; border-radius:12px; border:1px solid #eee;" />
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="container">
+    <h2>E2E testing is painful for predictable reasons</h2>
+    <ul>
+      <li>Recorded tests generate brittle selectors</li>
+      <li>Minor UI changes break half your suite</li>
+      <li>Maintaining tests costs more than writing them</li>
+    </ul>
+    <p>
+      ProboLabs fixes this by recording tests at the browser level and
+      regenerating selectors when the DOM changes — automatically.
+    </p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="container section">
+  <h2>How it works</h2>
+
+  <div class="steps">
+    <div class="step">
+      <h3>1. Download the desktop app</h3>
+      <p>
+        Install a Chromium‑based recorder that runs locally on your machine.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>2. Record a real user flow</h3>
+      <p>
+        Click through your app like a user. No selectors. No scripting.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>3. Run & export resilient tests</h3>
+      <p>
+        Get Playwright tests that survive UI changes and run in CI.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DESKTOP -->
+<section class="container section">
+  <h2>Why a desktop app?</h2>
+  <ul>
+    <li>Access to real browser APIs</li>
+    <li>Stable recording for complex apps (auth, iframes, SPAs)</li>
+    <li>No test data sent to the cloud</li>
+    <li>More reliable than browser extensions</li>
+  </ul>
+</section>
+
+<!-- FINAL CTA -->
+<section class="footer-cta" id="download">
+  <h2>Stop fixing broken tests.</h2>
+  <p>Record them once. Let ProboLabs keep them working.</p>
+  <a href="#" class="btn-primary">Download the desktop app</a>
+</section>
+
+</body>
+</html>

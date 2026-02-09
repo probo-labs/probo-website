@@ -32,26 +32,26 @@ export function Hero() {
               Introducing&nbsp;<strong>Probium</strong>
             </span>
             <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              Automation that Lives within your Browser<sup>*</sup>
+              Record E2E tests that don’t break.<sup>*</sup>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Capture real customer journeys intuitively in your browser and turn them into resilient, reusable automation.
+            Probium is a Chromium‑based desktop app that records real user flows, generates Playwright tests, and automatically heals them as your UI changes.
+            </p>
+            <p className="mt-2 text-sm text-slate-500">
+              * Yeah, we use AI...
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <DownloadButton color="slate" className="bg-slate-900 text-white hover:bg-slate-800" />
               <Button
-                href="https://youtu.be/13WLhM_T0iU"
+                href="https://youtu.be/TgvZTGzmBCc"
                 variant="outline"
                 color="slate"
               >
-                Watch demo
+                Watch ~2min demo
               </Button>
             </div>
             <p className="mt-12 text-sm font-semibold uppercase tracking-widest text-slate-500">
-              Trusted by Developers, Product Owners and QA teams shipping daily
-            </p>
-            <p className="mt-2 text-sm text-slate-500">
-              * Yeah, we use AI...
+            Mac • Windows • Linux · Local execution
             </p>
           </div>
           <div className="relative">
