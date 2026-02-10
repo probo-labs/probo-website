@@ -38,7 +38,7 @@ export function Hero() {
             Probium is a Chromium‑based desktop app that records real user flows, generates Playwright tests, and automatically heals them as your UI changes.
             </p>
             <p className="mt-2 text-sm text-slate-500">
-              * Yeah, we use AI...
+              * Powered by AI
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <DownloadButton color="slate" className="bg-slate-900 text-white hover:bg-slate-800" />
