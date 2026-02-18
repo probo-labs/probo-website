@@ -12,9 +12,9 @@ export function CallToAction() {
           Try Probium Now.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
-          Capture your first journey in minutes.<br />
-          No coding required.<br />
-          Basic plan is free.
+          Stop fixing broken tests.<br />
+          Record them once. Let Probium keep them working.<br />
+          Create your first test in minutes.
         </p>
         <div className="mt-10 flex justify-center">
           <DownloadButton color="white" className="!text-black hover:bg-white hover:!text-black" />

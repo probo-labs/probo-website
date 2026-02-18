@@ -22,7 +22,7 @@ export function DownloadButton({ children, showIcon = true, ...props }: Download
   }, [])
 
   const platformText = platform === 'Unknown' ? 'Desktop' : platform
-  const buttonText = children || `Download for ${platformText}`
+  const buttonText = children || `Download for ${platformText} (free)`
 
   const getDownloadUrl = (currentPlatform: string): string => {
     // macOS

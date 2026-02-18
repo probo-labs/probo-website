@@ -101,7 +101,7 @@ export function Header() {
       <Container className="flex items-center justify-between gap-x-6">
         <nav className="flex w-full items-center justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="/#hero" aria-label="ProboLabs.ai home" className="inline-flex">
+            <Link href="/#hero" aria-label="ProboLabs.ai home" className="inline-flex outline-none border-0 focus:outline-none focus:ring-0">
               <Logo imageClassName="h-7 w-auto md:h-8" />
             </Link>
             <div className="hidden md:flex md:items-center md:gap-x-6">

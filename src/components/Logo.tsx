@@ -11,12 +11,12 @@ export function Logo({ className, imageClassName, ...props }: LogoProps) {
   return (
     <span
       {...props}
-      className={clsx('inline-flex items-center', className)}
+      className={clsx('inline-flex items-center border-0 outline-none', className)}
     >
       <Image
         src={wordmarkImage}
         alt="ProboLabs.ai"
-        className={clsx('h-8 w-auto', imageClassName)}
+        className={clsx('h-8 w-auto border-0 outline-none', imageClassName)}
         priority
       />
     </span>
