@@ -21,6 +21,29 @@ For advanced use cases, you can execute arbitrary Node.js scripts as part of you
 
 > **Advanced Feature:** Custom scripts give you unlimited flexibility to extend Probium's capabilities for your specific testing needs.
 
+### Returning Values from Scripts
+To pass data from a script to subsequent steps in a scenario, use the `returnValue()` function.
+
+* **Simple value:**
+    ```javascript
+    returnValue("Hello");
+    ```
+* **Dynamic value (example: unique username):**
+    ```javascript
+    const currentTimestamp = Math.floor(Date.now() / 1000);
+    const result = "user_" + String(currentTimestamp).slice(-7);
+    returnValue(result);
+    ```
+
+### Using Parameters in Scripts
+Scripts can access existing scenario parameters using the `param` object:
+* **Example:** `returnValue("Hello, " + param.username);` (where `username` is a previously defined parameter).
+
+### Automatic Parameter Creation
+When a script returns a value, Probium automatically creates a new parameter. The parameter name is derived from the **Script Name**:
+* **Script Name:** `generate username`
+* **Created Parameter:** `generate_username`
+
 ### How to Change the Code of the Script
 
 
