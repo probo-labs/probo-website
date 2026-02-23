@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
 
 @theme {
   --text-*: initial;
@@ -49,3 +50,6 @@
 
   --container-2xl: 40rem;
 }
+
+/* Syntax highlighting for markdown code blocks (highlight.js) */
+@import 'highlight.js/styles/github-dark.min.css';
