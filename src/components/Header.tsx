@@ -24,6 +24,7 @@ const navigation = [
 const resources = [
   { name: 'FAQ', href: '/#faq' },
   { name: 'Docs', href: '/docs' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 function MobileNavLink({
@@ -141,6 +142,12 @@ export function Header() {
                     className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
                   >
                     Docs
+                  </Link>
+                  <Link
+                    href="/blog"
+                    className="block px-4 py-2 text-left text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                  >
+                    Blog
                   </Link>
                 </div>
               </div>
