@@ -24,6 +24,7 @@
     "rehype-highlight": "^7.0.2",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
+    "resend": "^6.9.4",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   },

@@ -8,10 +8,11 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s — ProboLabs.ai',
-    default: 'ProboLabs.ai — AI-Powered QA Automation',
+    default:
+      'ProboLabs.ai — WCAG 2.2 audits, remediation & VPAT-ready documentation',
   },
   description:
-    'Record once, test everywhere. ProboLabs.ai turns your browser into a self-healing QA assistant.',
+    'Deep WCAG 2.2 audits and automated code remediation that holds up in legal review—no overlays, source-level fixes, and continuous compliance.',
   icons: {
     icon: '/favicon.ico',
   },

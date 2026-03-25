@@ -14,7 +14,7 @@ const variantStyles = {
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
     blue: 'bg-blue-500 text-white hover:text-slate-100 hover:bg-blue-400 active:bg-blue-600 active:text-blue-50 focus-visible:outline-blue-500',
     white:
-      'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+      'bg-white text-slate-900 hover:bg-blue-50 hover:text-slate-900 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
   },
   outline: {
     slate:
