@@ -45,11 +45,12 @@ export function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-12">
           <div className="text-left">
             <h1 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Web accessibility that defends your business and delights your users.
+            Automated scans pass. Real users fail.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Stop guessing at compliance. Get deep WCAG 2.2 audits and automated code remediation
-              that actually holds up in a legal review.
+            Accessibility is not a page problem. It's a flow problem.
+            Get deep AI-driven WCAG 2.2 audits based on real user flows and automated code remediation
+              with a human-in-the-loop.
             </p>
             <div className="mt-10">
               <Button href="/#lead" color="slate" className="px-6 py-2.5 text-base">
