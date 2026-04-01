@@ -48,7 +48,7 @@ export function Hero() {
             Automated scans pass. Real users fail.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-            Accessibility is not a page problem. It's a flow problem.
+            Accessibility is not a page problem. It&apos;s a flow problem.
             Get deep AI-driven WCAG 2.2 audits based on real user flows and automated code remediation
               with a human-in-the-loop.
             </p>
